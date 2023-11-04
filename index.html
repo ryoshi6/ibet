@@ -311,12 +311,12 @@
         </div>
       </div>
     </div>
-   <script>
+  <script>
   const audioPlayer = document.getElementById('audioPlayer');
 
-  audioPlayer.addEventListener('canplay', function() {
+  window.onload = function() {
     audioPlayer.play();
-  });
+  };
 </script>
 
     <script src="main.js"></script>
