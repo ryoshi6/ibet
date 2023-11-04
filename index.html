@@ -9,7 +9,7 @@
     <title>flowers</title>
 </head>
 <body class="container">
- <audio id="audioPlayer">
+ <audio id="audioPlayer" autoplay muted>
   <source src="uhaw.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
@@ -313,12 +313,11 @@
     </div>
 <script>
   const audioPlayer = document.getElementById('audioPlayer');
-  const playButton = document.getElementById('playButton');
 
-  playButton.addEventListener('click', function() {
-    audioPlayer.play();
-  });
+  // Unmute the audio (optional)
+  audioPlayer.muted = false;
 </script>
+
 
 
     <script src="main.js"></script>
